@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Resume Details</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-2">Resume Details</h1>
+        <hr>
+        <div id="cv-form">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Personal Information</h3>
+                    <div class="form-group mt-3">
+                        <label for="FnameField">First Name</label>
+                        <input type="text" id="FnameField" placeholder="Enter your first name" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="LnameField">Last Name</label>
+                        <input type="text" id="LnameField" placeholder="Enter your last name" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="dobField">Date of Birth</label>
+                        <input type="date" id="dobField" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="emailField">Email</label>
+                        <input type="email" id="emailField" placeholder="Enter your email address" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="noField">Contact Number</label>
+                        <input type="tel" id="noField" placeholder="Enter your mobile number" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Address</h3>
+                    <div class="form-group mt-3">
+                        <label for="addressField">Address</label>
+                        <input type="text" id="addressField" placeholder="Enter your address" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="cityField">City</label>
+                        <input type="text" id="cityField" placeholder="eg. Mumbai" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="zipField">Zip Code</label>
+                        <input type="text" id="zipField" placeholder="eg. 400021" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="stateField">State</label>
+                        <input type="text" id="stateField" placeholder="eg. Maharashtra" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="countryField">Country</label>
+                        <input type="text" id="countryField" placeholder="eg. India" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h3>Qualification</h3>
+                    <div class="form-group mt-3">
+                        <label for="schField">School/College</label>
+                        <input type="text" id="schField" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="degreeField">Degree</label>
+                        <input type="text" id="degreeField" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="fieldofstudyField">Field of Study</label>
+                        <input type="text" id="fieldofstudyField" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="startField">Start Date</label>
+                        <input type="month" id="startField" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="endField">End Date</label>
+                        <input type="month" id="endField" class="form-control">
+                    </div>
+                    <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Currently Pursuing
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Experience</h3>
+                    <div class="form-group mt-3">
+                        <label for="jobTitleField">Job Title</label>
+                        <input type="text" id="jobTitleField" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="compNameField">Company Name</label>
+                        <input type="text" id="compNameField" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="expStartField">Start Date</label>
+                        <input type="month" id="expStartField" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="expEndField">End Date</label>
+                        <input type="month" id="expEndField" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="expDescField">Description</label>
+                        <textarea id="expDescField" class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h3>Skills</h3>
+                    <div class="form-group mt-3">
+                        <label for="skillField">Skill</label>
+                        <input type="text" id="skillField" class="form-control">
+                    </div>
+                    <!-- Add more skill fields here -->
+                </div>
+                <div class="col-md-6">
+                    <h3>References</h3>
+                    <div class="form-group mt-3">
+                        <label for="refNameField">Reference Name</label>
+                        <input type="text" id="refNameField" class="form-control">
+                    </div>
+                    <!-- Add more reference fields here -->
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <button class="btn btn-danger btn-lg" onclick="location.href='personal.html';" type="button">Back</button>
+                <button class="btn btn-success btn-lg float-end" onclick="saveDetails()" type="submit">Generate Resume</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function saveDetails() {
+            // JavaScript function to save form details and generate resume
+            // Fetch all the field values
+            var firstName = document.getElementById("FnameField").value;
+            var lastName = document.getElementById("LnameField").value;
+            var dob = document.getElementById("dobField").value;
+            var email = document.getElementById("emailField").value;
+            var contactNumber = document.getElementById("noField").value;
+            var address = document.getElementById("addressField").value;
+            var city = document.getElementById("cityField").value;
+            var zipCode = document.getElementById("zipField").value;
+            var state = document.getElementById("stateField").value;
+            var country = document.getElementById("countryField").value;
+            var school = document.getElementById("schField").value;
+            var degree = document.getElementById("degreeField").value;
+            var fieldOfStudy = document.getElementById("fieldofstudyField").value;
+            var start = document.getElementById("startField").value;
+            var end = document.getElementById("endField").value;
+            var currentlyPursuing = document.getElementById("flexCheckDefault").checked;
+            var jobTitle = document.getElementById("jobTitleField").value;
+            var companyName = document.getElementById("compNameField").value;
+            var expStart = document.getElementById("expStartField").value;
+            var expEnd = document.getElementById("expEndField").value;
+            var expDesc = document.getElementById("expDescField").value;
+            var skill = document.getElementById("skillField").value;
+            var referenceName = document.getElementById("refNameField").value;
+
+            // Once you have all the details, you can generate the resume using this data
+            // You can use this data to populate a template or create a PDF, etc.
+            // For simplicity, let's just log the details to the console for now
+            console.log("First Name:", firstName);
+            console.log("Last Name:", lastName);
+            console.log("Date of Birth:", dob);
+            console.log("Email:", email);
+            console.log("Contact Number:", contactNumber);
+            console.log("Address:", address);
+            console.log("City:", city);
+            console.log("Zip Code:", zipCode);
+            console.log("State:", state);
+            console.log("Country:", country);
+            console.log("School/College:", school);
+            console.log("Degree:", degree);
+            console.log("Field of Study:", fieldOfStudy);
+            console.log("Start Date:", start);
+            console.log("End Date:", end);
+            console.log("Currently Pursuing:", currentlyPursuing);
+            console.log("Job Title:", jobTitle);
+            console.log("Company Name:", companyName);
+            console.log("Experience Start Date:", expStart);
+            console.log("Experience End Date:", expEnd);
+            console.log("Experience Description:", expDesc);
+            console.log("Skill:", skill);
+            console.log("Reference Name:", referenceName);
+
+            // Here you can add code to generate the resume using the collected data
+            // For example, you can populate a template or create a PDF
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
